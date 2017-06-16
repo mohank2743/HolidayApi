@@ -1,0 +1,8 @@
+<button md-button (click)="goBack()" >Go Back </button>
+<md-card *ngFor="let ind1 of HolidaysOnList" class="col-md-4">
+    <md-card-title>{{ind1.name}} </md-card-title>
+    <md-card-subtitle>Original Date: {{ind1.date}} </md-card-subtitle>
+    <md-card-content>Date Observed: {{ind1.observed}} </md-card-content>
+    <md-card-content>Public: {{ind1.public}} </md-card-content>
+</md-card>
+
